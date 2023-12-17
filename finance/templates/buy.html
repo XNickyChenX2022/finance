@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+
+    <form action="/buy" method="post">
+        <input autofocus autocomplete="off" name="symbol" id="symbol" placeholder="Stock Symbol" type="text">
+        <input autofocus autocomplete="off" name="shares" id="shares" placeholder="Amount" type="number">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        var dt = new Date();
+    </script>
+{% endblock %}
